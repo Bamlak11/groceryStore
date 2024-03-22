@@ -83,7 +83,7 @@ const addInventory = () => {
     const itemName = document.getElementById('item-name').value;
     const itemPrice = parseFloat(document.getElementById('item-price').value);
     const itemQuantity = parseInt(document.getElementById('item-quantity').value);
-    const itemCategory = document.getElementById('category').value;
+    const itemCategory = document.querySelector('[name= "category"]').value;
 
 
     const newItem = new GroceryInventory(itemName, itemCategory, itemPrice, itemQuantity);
